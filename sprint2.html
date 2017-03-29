@@ -4,29 +4,40 @@
 <meta charset="utf-8">
 	<title>Sprint2</title>
 </head>
-<body>
+<body style="background:#99F4DF">
 	<div>
 	  <h1> Trello</h1>
 	  <section style="text-align:left">
-	  	<table border="1" width="1000">
+	  	<table  style ="background:#99F498" border="1" width="1000">
+	  	<!-- <form action="">
+	  	<label for="pendiente">nombre del pendiente:</label><input type="text" id="elemento">
+	  	<input type="button" onclick="eliminarPendiente(document.getElementById("elemento").value);" value="Eliminar Pendiente"></form> -->
 	  		<tr>
 	  			<td>
 	  			<p> Pendiente </p>
 	  			
-	  			<ol id="lista"></ol>
-	  			<input type="text" id="agregarlista" value="">
-	  			<input type="button" id="agregarLista" onclick="agregarpendiente()">Agregar Pendiente</button>
+	  			<ul id="lista"></ul>
+
+	  			<input   type="text" id="agregarlista" value="">
+	  			<input type="button" id="agregarlista" onclick="agregarpendiente()">Agregar Pendiente</button>
+	  		
+	  			
+	  			<button onclick="borrar()"> Borrar Pendiente</button>
 	  			</td>
 	  		</tr>
+
 	  	</table>
 	  </section>
 	  <section style="text-align:left">
-	  <table border="1" width="1000">
+	  <table  style="background:#99F498" border="1" width="1000">
 	 	 <tr>
 	  		<td>
 	  			<p>Pendiente2</p>
-	  			<input type="text">
-	  		    <button onclick="agregarpendiente2()">Agregar Pendiente</button>
+
+	  			<ul id="lista2"></ul>
+	  			<input  type="text" id="crearlista" value="">
+	  		    <input type="button" id="crearlista" onclick="agregarpendiente2()">Agregar Pendiente</button>
+	  		    <button onclick="borrar1()">Borrar Pendiente</button>
 	  		</td>
 	 	 </tr>
 	  	
@@ -36,9 +47,9 @@
 	
 
 		<p>Agregar Lista</p>
-		<lista id="agregar">
-		<input style="color:blue;" id="primerbloque">
-		<button id="crearlista" onclick="crear()" > Crear lista</button>
+		<ul id="agregar"></ul>
+		<input  type="text" style="color:blue;" id="primerbloque" value="">
+		<input type="button" id="agregar" onclick="crear()" > Crear lista</button>
 
 		
 	</div>
